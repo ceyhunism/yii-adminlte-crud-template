@@ -1,14 +1,13 @@
 {
-    "name": "bmsrox/yii-adminlte-crud-template",
+    "name": "ceyhunism/yii-adminlte-crud-template",
     "description": "CRUD template to adminLTE integrated with yii2",
-    "keywords": ["yii2", "extension", "gii", "bmsrox", "adminlte"],
-    "homepage": "https://github.com/bmsrox/yii-adminlte-crud-template",
+    "keywords": ["yii2", "extension", "gii", "crud template"],
+    "homepage": "https://github.com/ceyhunism/yii-adminlte-crud-template",
     "type": "yii2-extension",
-    "license": "BSD-3-Clause",
     "authors": [
         {
-            "name": "bmsrox",
-            "email": "bmsrox@gmail.com"
+            "name": "Ceyhun Ismayilzade",
+            "email": "ismayilzadeceyhun@gmail.com"
         }
     ],
     "require": {

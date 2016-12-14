@@ -1,26 +1,29 @@
-YII ADMINLTE CRUD TEMPLATE
+YII 2 ADMIN LTE CRUD TEMPLATE
 ==========================
 
-This is a code template to adminlte integrated with yii2
+Код для интеграции adminlte шаблона к CRUD в Gii.
+Нужно выполнить:
 
-    composer require bmsrox/yii-adminlte-crud-template
+    composer require ceyhunism/yii-adminlte-crud-template
 
-or add into composer.json
+или добавить в composer.json в "required"
 
-    "bmsrox/yii-adminlte-crud-template": "dev-master"
-    
+    "ceyhunism/yii-adminlte-crud-template": "dev-master"
+
+После этого при использовании CRUD в Gii в разделе "Code Template" необходимо выбрать соответствующий шаблон.
+
 ## CONFIG GII LAYOUT
 
-Into your backend/config/main-local.php edit the follow instruction:
+В конфигурационном файле /config/main.php нужно добавить:
 
 ```````
 $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
-          'generators' => [ //here
-            'crud' => [ // generator name
+          'generators' => [ 
+            'crud' => [
                 'class' => 'yii\gii\generators\crud\Generator', // generator class
-                'templates' => [ //setting for out templates
-                    'custom' => '@vendor/bmsrox/yii-adminlte-crud-template', // template name => path to template
+                'templates' => [ 
+                    'custom' => '@vendor/ceyhunism/yii-adminlte-crud-template',
                 ]
             ]
         ],
