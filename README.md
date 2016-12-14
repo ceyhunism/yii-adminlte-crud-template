@@ -1,4 +1,4 @@
-YII 2 ADMIN LTE CRUD TEMPLATE
+YII 2 ADMIN LTE CRUD
 ==========================
 
 Код для интеграции adminlte шаблона к CRUD в Gii.
@@ -10,9 +10,8 @@ YII 2 ADMIN LTE CRUD TEMPLATE
 
     "ceyhunism/yii-adminlte-crud-template": "dev-master"
 
-После этого при использовании CRUD в Gii в разделе "Code Template" необходимо выбрать соответствующий шаблон.
 
-## CONFIG GII LAYOUT
+## Настройка GII шаблона
 
 В конфигурационном файле /config/main.php нужно добавить:
 
@@ -29,3 +28,6 @@ $config['modules']['gii'] = [
         ],
     ];
 ```````
+
+
+После этого при использовании CRUD в Gii в разделе "Code Template" необходимо выбрать соответствующий шаблон.
