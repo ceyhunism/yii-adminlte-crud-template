@@ -26,11 +26,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="box">
 
         <div class="box-header with-border">
-        <?= "<?= " ?>Html::a(<?= $generator->generateString('Manage') ?>, ['index'], ['class' => 'btn btn-warning']) ?>
-        <?= "<?= " ?>Html::a(<?= $generator->generateString('Create') ?>, ['create'], ['class' => 'btn btn-success']) ?>
-        <?= "<?= " ?>Html::a(<?= $generator->generateString('Update') ?>, ['update', <?= $urlParams ?>], ['class' => 'btn btn-primary']) ?>
+        <?= "<?= " ?>Html::a(<?= $generator->generateString('Manage') ?>, ['index'], ['class' => 'btn btn-warning btn-flat']) ?>
+        <?= "<?= " ?>Html::a(<?= $generator->generateString('Create') ?>, ['create'], ['class' => 'btn btn-success btn-flat']) ?>
+        <?= "<?= " ?>Html::a(<?= $generator->generateString('Update') ?>, ['update', <?= $urlParams ?>], ['class' => 'btn btn-primary btn-flat']) ?>
         <?= "<?= " ?>Html::a(<?= $generator->generateString('Delete') ?>, ['delete', <?= $urlParams ?>], [
-            'class' => 'btn btn-danger',
+            'class' => 'btn btn-danger btn-flat',
             'data' => [
                 'confirm' => <?= $generator->generateString('Are you sure you want to delete this item?') ?>,
                 'method' => 'post',

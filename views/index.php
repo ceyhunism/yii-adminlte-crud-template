@@ -31,12 +31,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
         <div class="box-header with-border">
             <div class="pull-left">
-                <?= "<?= " ?>Html::a(<?= $generator->generateString('Create ' . Inflector::camel2words(StringHelper::basename($generator->modelClass))) ?>, ['create'], ['class' => 'btn btn-success']) ?>
-            </div>
-            <div class="pull-right">
-        <?php if(!empty($generator->searchModelClass)): ?>
-    <?= "    <?php "; ?>echo $this->render('_search', ['model' => $searchModel]); ?>
-        <?php endif; ?>
+                <?= "<?= " ?>Html::a(<?= $generator->generateString('Create ' . Inflector::camel2words(StringHelper::basename($generator->modelClass))) ?>, ['create'], ['class' => 'btn btn-success btn-flat']) ?>
             </div>
         </div>
 
@@ -44,7 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <?php if ($generator->indexWidgetType === 'grid'): ?>
     <?= "<?= " ?>GridView::widget([
         'dataProvider' => $dataProvider,
-        <?= !empty($generator->searchModelClass) ? "//'filterModel' => \$searchModel,\n        'columns' => [\n" : "'columns' => [\n"; ?>
+        <?= !empty($generator->searchModelClass) ? "'filterModel' => \$searchModel,\n        'columns' => [\n" : "'columns' => [\n"; ?>
             //['class' => 'yii\grid\SerialColumn'],
 
 <?php

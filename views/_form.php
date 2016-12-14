@@ -40,7 +40,7 @@ use yii\widgets\ActiveForm;
 		</div>
 
 	    <div class="box-footer">
-			<div class="form-btn">
+			<div class="form-btn btn-flat">
 	        <?= "<?= " ?>Html::submitButton($model->isNewRecord ? <?= $generator->generateString('Create') ?> : <?= $generator->generateString('Update') ?>, ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
 	    	</div>
 	    </div>
