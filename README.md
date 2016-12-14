@@ -1,6 +1,9 @@
 YII 2 ADMIN LTE CRUD
 ==========================
 
+
+## Установка CRUD шаблона
+
 Код для интеграции adminlte шаблона к CRUD в Gii.
 Нужно выполнить:
 
@@ -10,6 +13,9 @@ YII 2 ADMIN LTE CRUD
 
     "ceyhunism/yii-adminlte-crud-template": "dev-master"
 
+----
+Альтернативный способ установки:
+    Скопировать весь проект ceyhunism/yii-adminlte-crud-template в папку @vendor
 
 ## Настройка GII шаблона
 
